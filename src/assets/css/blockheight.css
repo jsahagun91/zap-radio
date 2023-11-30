@@ -1,0 +1,32 @@
+.blockHeight {
+    padding: 5px;
+}
+
+.blockHeight .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blockHeight .height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blockHeight .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blockHeight .bitcoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+}

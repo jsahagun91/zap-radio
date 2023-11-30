@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Card from './components/Card'
+import List from './components/List'
+import BitcoinBlockHeight from './components/BlockHeight';
 
-function App() {
+const App = () => {
+  const [musicNumber, setMusicNumber] = useState(0)
+  const [open, setOpen] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <main>
+      <BitcoinBlockHeight />
+      <Card props={{musicNumber, setMusicNumber, setOpen}}/>
+      <List props={{open, setOpen, musicNumber, setMusicNumber}}/> 
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
