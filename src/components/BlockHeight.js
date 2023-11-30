@@ -44,7 +44,7 @@ const BitcoinBlockHeight = () => {
 
     return (
         <div className='blockHeight'>
-            <h2 className='title'>Zap Rad.io</h2>
+            <h2 className='title'>⚡️LNwav</h2>
             <div className="bitcoin">
                 <p className='height'>&#x25A2; {blockHeight}</p>
                 <p className='price'>${bitcoinPrice}</p>
